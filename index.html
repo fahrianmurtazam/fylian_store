@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fylian Store</title>
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="fixed top-0 left-0 w-full z-50">
+      <nav
+        class="navbar bg-slate-800 px-5 py-4 flex justify-between items-center bg-opacity-60 backdrop-blur-md border-b-2 border-primary relative"
+      >
+        <a href="#" class="navbar-logo text-2xl font-bold italic"
+          >Fylian<span class="text-primary"> Store</span></a
+        >
+        <!-- mode desktop -->
+        <div class="hidden md:inline-block navbar-nav ml-auto mx-5">
+          <ul class="flex gap-5 font-medium">
+            <li>
+              <a class="text-base hover:text-primary" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-primary" href="#about">About</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-primary" href="#menu">Menu</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-primary" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- mode mobile  -->
+        <div
+          id="nav-menu"
+          class="absolute py-5 top-full left-0 translate-x-[-1000px] h-[100vh] w-[45%] transition-all ease-in duration-300 bg-slate-900 bg-opacity-90 backdrop-blur-md text-white shadow-md shadow-slate-300"
+        >
+          <ul class="py-8 text-center space-y-8 font-medium">
+            <li>
+              <a class="text-base hover:text-primary" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-primary" href="#about">About</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-primary" href="#menu">Menu</a>
+            </li>
+            <li>
+              <a class="text-base hover:text-primary" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-5">
+          <button class="hover:text-primary" id="search"></button>
+            <i data-feather="search"></i>
+          </button>
+          <button class="hover:text-primary" id="shopping-cart">
+            <i data-feather="shopping-cart"></i>
+          </button>
+          <button class="hover:text-primary md:hidden" id="hamburger-menu">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- hero section -->
+    <section id="home">
+      <div
+        style="background-image: url(img/coffe.jpg)"
+        class="min-h-screen max-w-full bg-no-repeat bg-cover bg-center md:flex md:items-center md:justify-center"
+      >
+        <main class="relative top-20 px-4 py-7 text-center">
+          <h1 class="text-2xl md:text-4xl font-bold">
+            Mari Nikmati Secangkir <span class="text-primary">Kopi</span>
+          </h1>
+          <p class="py-7 font-light md:text-lg">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a
+            class="px-4 py-2 rounded-md shadow-md shadow-amber-500 bg-primary hover:bg-amber-700 md:text-lg"
+            href="#"
+            >Beli Sekarang</a
+          >
+        </main>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about section -->
+    <section id="about">
+      <div class="container py-24">
+        <div class="pb-12 text-center text-3xl font-bold">
+          <h1>Tentang <span class="text-primary">Kami</span></h1>
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-evenly">
+          <img src="img/about.jpg" width="350px" height="350px" alt="coffe" />
+          <div class="py-4 max-w-80 lg:max-w-md md:py-12">
+            <h2 class="py-2 text-lg text-amber-500 font-semibold">
+              Kenapa memilih kopi kami ?
+            </h2>
+            <p class="text-justify font-light lg:text-base">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptates dolores corporis mollitia ipsa laudantium? Excepturi,
+              inventore cumque Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+            <p class="text-justify font-light lg:text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              ducimus blanditiis quos. Lorem ipsum dolor sit amet, consectetur
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- menu section -->
+    <section id="menu">
+      <div class="container mx-auto py-24 bg-amber-950">
+        <div class="pb-8 text-center text-3xl font-bold">
+          <h1>Menu <span class="text-primary">Kami</span></h1>
+        </div>
+        <div class="mx-auto px-4 max-w-md md:max-w-lg text-center font-light md:text-base">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum totam voluptas neque. Molestiae sed nam et quae omnis earum.</p>
+        </div>
+          <div class="pt-8 px-5 flex flex-wrap justify-center gap-6">
+            <div class="menu-card grid content-center-center bg-primary rounded-2xl overflow-hidden ">
+              <img src="img/menu1.jpg" alt="Coffee" class="w-60 h-60 md:w-52 md:h-52">
+              <div class="px-4 py-2">
+                <h3 class="text-lg font-bold text-bg">Cappuccino</h3>
+                <p class="">IDR 15 K</p>
+              </div>
+            </div>
+            <div class="menu-card grid content-center-center bg-primary rounded-2xl overflow-hidden ">
+              <img src="img/menu2.jpg" alt="Coffee" class="w-60 h-60 md:w-52 md:h-52">
+              <div class="px-4 py-2">
+                <h3 class="text-lg font-bold text-bg">Expresso</h3>
+                <p class="">IDR 15 K</p>
+              </div>
+            </div>
+            <div class="menu-card grid content-center-center bg-primary rounded-2xl overflow-hidden ">
+              <img src="img/menu3.jpg" alt="Coffee" class="w-60 h-60 md:w-52 md:h-52">
+              <div class="px-4 py-2">
+                <h3 class="text-lg font-bold text-bg">Caramel Macchiato</h3>
+                <p class="">IDR 25 K</p>
+              </div>
+            </div>
+            <div class="menu-card grid content-center-center bg-primary rounded-2xl overflow-hidden ">
+              <img src="img/menu4.jpg" alt="Coffee" class="w-60 h-60 md:w-52 md:h-52">
+              <div class="px-4 py-2">
+                <h3 class="text-lg font-bold text-bg">Ice Coffee</h3>
+                <p class="">IDR 10 K</p>
+              </div>
+            </div>
+            <div class="menu-card grid content-center-center bg-primary rounded-2xl overflow-hidden ">
+              <img src="img/menu5.jpg" alt="Coffee" class="w-60 h-60 md:w-52 md:h-52">
+              <div class="px-4 py-2">
+                <h3 class="text-lg font-bold text-bg">Mocha</h3>
+                <p class="">IDR 20 K</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+    <!-- menu end -->
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="container mx-auto py-24">
+        <div class="pb-8 text-center text-3xl font-bold">
+          <h1>Kontak <span class="text-primary">Kami</span><h1>
+        </div>
+        <div class="mx-auto px-4 max-w-md md:max-w-lg text-center font-light md:text-base">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum, dolore maiores magni placeat.</p>
+        </div>
+
+        <div class="grid justify-items-center md:grid-cols-2 md:items-center">
+          <iframe class="py-8 px-5 min-w-full h-72" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63536.6296474489!2d95.28750232701137!3d5.561185900952888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3040377ae63dbcdf%3A0x3039d80b220cb90!2sBanda%20Aceh%2C%20Kota%20Banda%20Aceh%2C%20Aceh!5e0!3m2!1sid!2sid!4v1719133869900!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="min-w-full md:w-2/4">
+            <div class="flex gap-3 py-2 px-5">
+              <i data-feather="user"></i>
+              <input type="text" placeholder="Nama" class="text-center bg-slate-900 ring-1 ring-cyan-400 p-1 rounded-lg w-full">
+            </div>
+            <div class="flex gap-3 py-2 px-5">
+              <i data-feather="mail"></i>
+              <input type="email" placeholder="Email" class="text-center bg-slate-900 ring-1 ring-cyan-400 p-1 rounded-lg w-full">
+            </div>
+            <div class="flex gap-3 py-2 px-5">
+              <i data-feather="phone"></i>
+              <input type="number" placeholder="No HP" class="text-center bg-slate-900 ring-1 ring-cyan-400 p-1 rounded-lg w-full">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="py-5 px-4 bg-yellow-900 w-full">
+        <div class="py-4 flex gap-x-8 justify-center">
+          <a class="hover:text-cyan-400" href=""><i data-feather="instagram"></i></a>
+          <a class="hover:text-cyan-400" href=""><i data-feather="facebook"></i></a>
+          <a class="hover:text-cyan-400" href=""><i data-feather="twitter"></i></a>
+        </div>
+        <div class="flex justify-center gap-x-4">
+          <a class="hover:text-slate-900 hover:font-semibold" href="#home">Home</a>
+          <a class="hover:text-slate-900 hover:font-semibold" href="#about">About</a>
+          <a class="hover:text-slate-900 hover:font-semibold" href="#menu">Menu</a>
+          <a class="hover:text-slate-900 hover:font-semibold" href="#contact">Contact</a>
+        </div>
+        <div class="pt-4 text-center font-semibold">
+          <p>Created By <a href="" class="text-cyan-500 hover:text-slate-900">Fahrian Murtazam</a>. | &copy; 2024</p><hr>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="dist/main.js"></script>
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
