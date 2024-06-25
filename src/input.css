@@ -14,3 +14,15 @@ body {
   font-family: "poppins", sans-serif;
   @apply bg-bg text-white;
 }
+
+/* modal animation */
+@keyframes animateModal {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
